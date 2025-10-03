@@ -7,6 +7,8 @@ int main()
 {
 
 
+    cout << "gdsukswadu";
+
 
 
     return 0;
