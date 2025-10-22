@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b53ba605-045f-43db-a076-ca98bb8dca69}</ProjectGuid>
-    <RootNamespace>My022QueueLabolatory</RootNamespace>
+    <ProjectGuid>{a79034b2-f456-4d1b-963c-d44d0df5e596}</ProjectGuid>
+    <RootNamespace>My030STL</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,7 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="022_QueueLabolatory.cpp" />
+    <ClCompile Include="030_STL.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
