@@ -3,6 +3,7 @@
 #include <string>
 #include <random>
 #include <ctime>
+#include <cmath>
 using namespace std;
 
 // STL (Standard Template Library) - стандартна бібліотека шаблонів
@@ -53,6 +54,22 @@ public:
 	}
 
 };
+
+class point {
+private:
+	int x, y;
+public:
+
+	point() : x(0), y(0){}
+	point(int x, int y) : x(x), y(y) {}
+
+	friend ostream& operator << (ostream& os, const point& obj);
+};
+
+ostream& operator << (ostream& os, const point& obj) {
+	os << "x = " << obj.x << ", " << "y = " << obj.y << "\n";
+	return os;
+}
 
 int main() {
 	srand(time(0));
@@ -147,12 +164,64 @@ int main() {
 
 	/*auto it = v.begin();*/
 
-	vector<string> countries = { "USA", "Ukraine", "France", "Spain", "Germany" };
+	/*vector<string> countries = { "USA", "Ukraine", "France", "Spain", "Germany" };
 	vector<string>::iterator it = countries.begin();
 
 	countries.insert(it, "Italy");
 
-	print_vector(countries);
+	print_vector(countries);*/
+
+	/*vector<point> points = { point(1, 2), point(4, 5), point(10, -2) };
+	print_vector(points);*/
+
+	
+	/*vector<int> v;
+
+	v.push_back(pow(1, 2));
+	v.push_back(pow(2, 2));
+	v.push_back(pow(3, 2));
+	v.push_back(pow(4, 2));
+	v.push_back(pow(5, 2));
+	v.push_back(pow(6, 2));
+	v.push_back(pow(7, 2));
+	v.push_back(pow(8, 2));
+	v.push_back(pow(9, 2));
+	v.push_back(pow(10, 2));
+
+	print_vector(v);*/
+
+	int rows = 10, cols = 10;
+	int count = 1;
+	vector<vector<int>> v(rows);
+
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < cols; j++)
+		{
+			v[i].push_back(count++);
+		}
+	}
+
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < cols; j++)
+		{
+			cout << v[i][j] << " ";
+		}
+		cout << "\n";
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 	return 0;
 }
